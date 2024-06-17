@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+  src: URL('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+:root {
+	--font-body: 'Poppins','Open Sans', 'Helvetica Neue', sans-serif;
+	--color-bg-1: hsl(224, 44%, 95%);
+	--color-theme-2: #4075a6;
+	--color-text: rgba(0, 0, 0, 0.7);
+	--max-width: 1250px;
+	font-family: var(--font-body);
+	color: var(--color-text);
+}
