@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-white rounded-lg p-4 gap-x-4 my-5 cursor-pointer">
+  <div class="w-full bg-white rounded-lg p-4 gap-x-4 my-5 cursor-pointer border ">
     <div class="info">
       <div class="flex justify-center">
         <button 
@@ -9,7 +9,7 @@
         Eliminar del pedido
       </button>
       </div>
-      <div class="name font-bold text-xl">{{ product.product.name }} 🍓</div>
+      <div class="name font-bold text-xl">{{ product.product.name }} {{ iconName(product.product.name) }} </div>
       <div class="price flex justify-between font-bold text-xl mt-4 mb-2">
         <span class="text-red-400">Base</span>
         <span> {{ getMoneyFormat(product.product.price) }} </span>
@@ -66,6 +66,12 @@ function getMoneyFormat(price) {
     maximumFractionDigits: 0
   }
   return price.toLocaleString('es-CO', options)
+}
+
+function iconName(name) {
+  return name.toLowerCase().includes("fresa")
+      ? "🍓"
+      : "🫓"
 }
 
 function shouldShowOtherAdditions(additions) {

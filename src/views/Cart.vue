@@ -59,6 +59,12 @@ function handleDeleteProduct(productId) {
   }
 }
 
+function iconName(name) {
+  return name.toLowerCase().includes("fresa")
+      ? "🍓"
+      : "🫓"
+}
+
 function handleFinish() {
   let message = ''
 
@@ -66,8 +72,8 @@ function handleFinish() {
   for (let i = 0; i < products.length; i++) {
     let { product, addedToppings, totalPrice } = products[i]
 
-    message += `🍓 Producto ${i + 1} 🍓 %0a`
-    message += `*${product.name}*%0a`
+    message += `*:::::: Producto ${i + 1} ::::::* %0a`
+    message += `*${product.name} ${iconName(product.name)}*%0a`
     for (let toppinName in addedToppings) {
       message += `*${toppinName}*%0a`
 

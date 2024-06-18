@@ -4,25 +4,43 @@
 */
 const products = [
   {
-    "name": "Fresas Pequeñas (9 Oz)",
-    "size": "9 Onz",
-    "description": "Deliciosas fresas troceadas con la más deliciosa crema de leche, con las adiciones que desees",
-    "price": 6000,
-    "toppings": true
+    category: 'Fresas con crema',
+    categoryId: 'fresas-crema',
+    products: [
+      {
+        "name": "Fresas Pequeñas (9 Oz)",
+        "size": "9 Onz",
+        "description": "Deliciosas fresas troceadas con la más deliciosa crema de leche, con las adiciones que desees",
+        "price": 6000,
+        "toppings": true
+      },
+      {
+        "name": "Fresas Medianas (12 Oz)",
+        "size": "12 Onz",
+        "description": "Deliciosas fresas troceadas con la más deliciosa crema de leche, con las adiciones que desees",
+        "price": 9000,
+        "toppings": true
+      },
+      {
+        "name": "Fresas Grandes (14 Oz)",
+        "size": "14 Onz",
+        "description": "Deliciosas fresas troceadas con la más deliciosa crema de leche, con las adiciones que desees",
+        "price": 12000,
+        "toppings": true     
+      }
+    ]
   },
   {
-    "name": "Fresas Medianas (12 Oz)",
-    "size": "12 Onz",
-    "description": "Deliciosas fresas troceadas con la más deliciosa crema de leche, con las adiciones que desees",
-    "price": 9000,
-    "toppings": true
-  },
-  {
-    "name": "Fresas Grandes (14 Oz)",
-    "size": "14 Onz",
-    "description": "Deliciosas fresas troceadas con la más deliciosa crema de leche, con las adiciones que desees",
-    "price": 12000,
-    "toppings": true     
+    category: 'Obleas',
+    categoryId: 'obleas',
+    products: [
+      {
+        "name": "Oblea",
+        "description": "Base de oblea con crema, salsa de arequipe y queso rayado",
+        "price": 4000,
+        "toppings": true
+      },
+    ]
   }
 ]
 /*
