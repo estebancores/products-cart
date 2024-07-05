@@ -73,7 +73,7 @@ const toppings = [
   }
 ]
 
-const whatsappNumber = "573147183836"
+const whatsappNumber = ""
 
 
 

@@ -3,7 +3,7 @@
     <h1 class="text-2xl sm:text-3xl font-bold text-center">Deliciosas fresas con crema</h1>
     <div class="mb-10">
       <p class="text-2xl text-center mt-10">
-        🍓¡Ya son más de <strong>30</strong> clientes felices 🥳! 🍓
+        🍓¡Ya son más de <strong>60</strong> clientes felices 🥳! 🍓
       </p>
     </div>
     <div>
