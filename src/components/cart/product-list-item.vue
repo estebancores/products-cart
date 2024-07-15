@@ -35,7 +35,7 @@
             
               <div v-for="addition in topping.options" :key="addition.name" class="flex justify-between">
                 <template v-if="addition.qty > 0">
-                  <span>{{ `${addition.name} X${addition.qty}` }} </span>
+                  <span>{{ `X${addition.qty} - ${addition.name}` }} </span>
                   <span>{{ getMoneyFormat((topping.price * addition.qty)) }}</span>
                 </template>
               </div>

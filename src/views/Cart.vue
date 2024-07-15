@@ -26,14 +26,14 @@
       <h2 class="text-3xl text-center my-20"> Debes escoger los productos que vas a pedir 😅</h2>
     </div>
     <div>
-      <router-link to="/pedidos" class="block text-xl bg-white text-center w-full p-4 rounded-md my-2">
+      <router-link to="/pedidos" class="block text-xl bg-white text-center w-full p-4 rounded-md my-2 border">
         👈 Seguir comprando
       </router-link>
     </div>
 
     <div>
       <button v-if="mainStore.getCartProducts.length > 0" to="/pedidos"
-        class="block text-xl text-green-700 text-center w-full p-4 rounded-md my-4" @click="handleNewDelivery">
+        class="block text-xl text-green-700 text-center w-full p-4 rounded-md my-4 border" @click="handleNewDelivery">
         Iniciar nuevo pedido
       </button>
       <router-link v-else to="/pedidos" class="block text-xl text-green-700 text-center w-full p-4 rounded-md my-4">Iniciar

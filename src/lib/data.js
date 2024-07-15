@@ -10,21 +10,21 @@ const products = [
       {
         "name": "Fresas Pequeñas (9 Oz)",
         "size": "9 Onz",
-        "description": "Deliciosas fresas troceadas con la más deliciosa crema de leche, con las adiciones que desees",
+        "description": "Vaso de 9 Onz con fresas troceadas con la más deliciosa crema",
         "price": 6000,
         "toppings": true
       },
       {
         "name": "Fresas Medianas (12 Oz)",
         "size": "12 Onz",
-        "description": "Deliciosas fresas troceadas con la más deliciosa crema de leche, con las adiciones que desees",
+        "description": "Vaso de 12 Onz con fresas troceadas con la más deliciosa crema",
         "price": 9000,
         "toppings": true
       },
       {
         "name": "Fresas Grandes (14 Oz)",
         "size": "14 Onz",
-        "description": "Deliciosas fresas troceadas con la más deliciosa crema de leche, con las adiciones que desees",
+        "description": "Vaso de 14 Onz con fresas troceadas con la más deliciosa crema",
         "price": 12000,
         "toppings": true     
       }
@@ -73,7 +73,9 @@ const toppings = [
   }
 ]
 
-const whatsappNumber = ""
+const whatsappNumber = "573147183836"
+
+const googleProfileUrl = "https://deliciosasfresas.xyz"
 
 
 

@@ -4,9 +4,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    manifest: true
-  },
+ 
   plugins: [vue(), VitePWA(
     {
       
@@ -18,8 +16,8 @@ export default defineConfig({
       strategies: "injectManifest",
       srcDir: "src",
       manifest: {
-        "short_name": "DeliFresas",
-        "name": "DeliFresas San Antonio",
+        "short_name": "DeliFresón",
+        "name": "DeliFresón San Antonio",
         "icons": [
           {
             "src": "/icon-72x72.png",
@@ -52,12 +50,12 @@ export default defineConfig({
         "display": "standalone",
         "scope": "/",
         "theme_color": "#3367D6",
-        "description": "App de pedidos de fresas en San Antonio de Prado",
+        "description": "App de pedidos de fresas con crema en San Antonio de Prado",
         "screenshots": [
           {
             "src": "/front.jpg",
             "type": "image/jpg",
-            "sizes": "372x767"
+            "sizes": "385x766"
           },
           {
             
@@ -69,10 +67,23 @@ export default defineConfig({
             "form_factor": "wide",
             "src": "/wide.jpg",
             "type": "image/jpg",
-            "sizes": "906x939"
+            "sizes": "941x855"
           },
         ]
       },
     }
   )],
+  build: {
+    manifest: true,
+    chunkSizeWarningLimit: 1600,
+    rollupOptions: {
+      output: {
+        chunkFileNames: `[name]-[hash].js`,
+        entryFileNames: `[name]-[hash].js`,
+        assetFileNames: ({name}) => {
+          return '[name]-[hash][extname]'
+        }
+      },
+    },
+  },
 })

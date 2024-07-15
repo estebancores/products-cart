@@ -7,7 +7,7 @@
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
-  src: URL('/fonts/Poppins-Regular.ttf') format('truetype');
+  src: URL('/Poppins-Regular.ttf') format('truetype');
 }
 
 :root {

@@ -13,7 +13,7 @@
     <div class="w-full h-20 text-center">
       <router-link to="/carrito"
         class="block w-[100%]  bg-green-700 rounded-md py-4 px-10 text-center text-xl text-white shadow shadow-black">
-        🛒 🍦{{ cartStatus.qty }} - {{ getMoneyFormat(cartStatus.total) }}
+        🛒Carrito🛒 {{ getMoneyFormat(cartStatus.total) }}
       </router-link>
     </div>
   </div>

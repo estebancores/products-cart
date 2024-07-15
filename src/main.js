@@ -8,6 +8,7 @@ import App from './App.vue'
 import Home from "./views/Home.vue"
 import Delivery from "./views/Delivery.vue"
 import Cart from "./views/Cart.vue"
+import UserReview from "./views/UserReview.vue"
 
 const app = createApp(App)
 
@@ -28,6 +29,11 @@ const router = createRouter({
       path: '/carrito',
       name: 'Cart',
       component: Cart
+    },
+    {
+      path: '/opinion',
+      name: 'UserReview',
+      component: UserReview
     }
   ]
 })
